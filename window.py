@@ -32,7 +32,7 @@ class Window:
     def close(self):
         self.__running = False
 
-    def draw_line(self, line: Line, fill_color: str):
+    def draw_line(self, line: Line, fill_color: str = 'black'):
         line.draw(
             self.__canvas,
             fill_color,
