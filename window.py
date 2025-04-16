@@ -1,3 +1,4 @@
+import time
 from tkinter import Tk, BOTH, Canvas
 
 from line import Line
@@ -27,6 +28,7 @@ class Window:
     def wait_for_close(self):
         self.__running = True
         while self.__running:
+            time.sleep(1/164)
             self.redraw()
 
     def close(self):
