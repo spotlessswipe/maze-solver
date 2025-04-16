@@ -6,7 +6,7 @@ from window import Window
 class Cell:
     def __init__(
         self,
-        win: Window,
+        win: Window = None,
     ):
         self.has_left_wall = True
         self.has_right_wall = True
